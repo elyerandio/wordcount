@@ -1,0 +1,9 @@
+<h1>COUNT</h1>
+<p>There are {{ count }} words in your text</p>
+{{ fulltext }}
+<ul>
+	{% for word, cnt in word_dictionary.items %}
+		<li>{{ word }} = {{ cnt }}</li>	
+
+	{% endfor %}
+</ul>
